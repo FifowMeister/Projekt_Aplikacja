@@ -2,8 +2,8 @@ package edu.kis.vh.nursery;
 
 public class DefaultCountingOutRhymer {
 
-    private int CAPACITY = 12;
-    private int EMPTY = -1;
+    private final int CAPACITY = 12;
+    private final int EMPTY = -1;
 
     private int[] numbers = new int[CAPACITY];
 
