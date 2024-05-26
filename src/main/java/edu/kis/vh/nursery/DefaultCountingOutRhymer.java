@@ -4,7 +4,7 @@ public class DefaultCountingOutRhymer {
 
     private final int CAPACITY = 12;
     private final int EMPTY = -1;
-
+    private final int EMPTY_ELEMENT = -1;
     private int[] numbers = new int[CAPACITY];
 
     public int total = EMPTY;
@@ -24,7 +24,7 @@ public class DefaultCountingOutRhymer {
 
     protected int peekaboo() {
         if (callCheck())
-            return EMPTY;
+            return EMPTY_ELEMENT;
         return numbers[total];
     }
 
