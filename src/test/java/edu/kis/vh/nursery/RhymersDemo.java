@@ -29,6 +29,7 @@ class RhymersDemo {
                 System.out.print(rhymers[i].countOut() + "  ");
             System.out.println();
         }
+        // TODO: needs refactoring - 'for' loop can be replaced with enhanced 'for'
 
         System.out.println("total rejected is "
                 + ((HanoiRhymer) rhymers[3]).reportRejected());

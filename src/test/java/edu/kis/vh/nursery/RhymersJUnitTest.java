@@ -20,11 +20,13 @@ public class RhymersJUnitTest {
         DefaultCountingOutRhymer rhymer = new DefaultCountingOutRhymer();
         boolean result = rhymer.callCheck();
         Assert.assertEquals(true, result);
+        // TODO: needs refactoring - 'assertEquals()' can be simplified to 'assertTrue()'
 
         rhymer.countIn(888);
 
         result = rhymer.callCheck();
         Assert.assertEquals(false, result);
+        // TODO: needs refactoring - 'assertEquals()' can be simplified to 'assertFalse()'
     }
 
     @Test
@@ -34,11 +36,13 @@ public class RhymersJUnitTest {
         for (int i = 0; i < STACK_CAPACITY; i++) {
             boolean result = rhymer.isFull();
             Assert.assertEquals(false, result);
+            // TODO: needs refactoring - 'assertEquals()' can be simplified to 'assertFalse()'
             rhymer.countIn(888);
         }
 
         boolean result = rhymer.isFull();
         Assert.assertEquals(true, result);
+        // TODO: needs refactoring - 'assertEquals()' can be simplified to 'assertTrue()'
     }
 
     @Test
